@@ -1,0 +1,66 @@
+/*regular*/
+@font-face {
+  font-family: 'FujitsuSans-Regular';
+  src: url('../fonts/fujitsusans-regular/FujitsuSans-Regular.eot') format('embedded-opentype'),
+       url('../fonts/fujitsusans-regular/FujitsuSans-Regular.woff') format('woff'),
+       url('../fonts/fujitsusans-regular/FujitsuSans-Regular.ttf')  format('truetype'), 
+       url('../fonts/fujitsusans-regular/FujitsuSans-Regular.svg#FujitsuSans-Regular') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*bold*/
+@font-face {
+  font-family: 'FujitsuSans-Bold';
+  src: url('../fonts/fujitsusans-bold/FujitsuSans-Bold.eot') format('embedded-opentype'),
+       url('../fonts/fujitsusans-bold/FujitsuSans-Bold.woff') format('woff'),
+       url('../fonts/fujitsusans-bold/FujitsuSans-Bold.ttf')  format('truetype'), 
+       url('../fonts/fujitsusans-bold/FujitsuSans-Bold.svg#FujitsuSans-Bold') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*light*/
+@font-face {
+  font-family: 'FujitsuSans-Light';
+  src: url('../fonts/fujitsusans-light/FujitsuSans-Light.eot') format('embedded-opentype'),
+       url('../fonts/fujitsusans-light/FujitsuSans-Light.woff') format('woff'),
+       url('../fonts/fujitsusans-light/FujitsuSans-Light.ttf')  format('truetype'), 
+       url('../fonts/fujitsusans-light/FujitsuSans-Light.svg#FujitsuSans-Light') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+/*font-size: 20px;*/
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-logout:before { content: "\f100"; }
+.flaticon-user:before { content: "\f101"; }

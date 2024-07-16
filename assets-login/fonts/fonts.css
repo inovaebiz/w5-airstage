@@ -1,0 +1,36 @@
+/*regular*/
+@font-face {
+  font-family: 'FujitsuSans-Regular';
+  src: url('../fonts/fujitsusans-regular/FujitsuSans-Regular.eot') format('embedded-opentype'),
+       url('../fonts/fujitsusans-regular/FujitsuSans-Regular.woff') format('woff'),
+       url('../fonts/fujitsusans-regular/FujitsuSans-Regular.ttf')  format('truetype'), 
+       url('../fonts/fujitsusans-regular/FujitsuSans-Regular.svg#FujitsuSans-Regular') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*bold*/
+@font-face {
+  font-family: 'FujitsuSans-Bold';
+  src: url('../fonts/fujitsusans-bold/FujitsuSans-Bold.eot') format('embedded-opentype'),
+       url('../fonts/fujitsusans-bold/FujitsuSans-Bold.woff') format('woff'),
+       url('../fonts/fujitsusans-bold/FujitsuSans-Bold.ttf')  format('truetype'), 
+       url('../fonts/fujitsusans-bold/FujitsuSans-Bold.svg#FujitsuSans-Bold') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*light*/
+@font-face {
+  font-family: 'FujitsuSans-Light';
+  src: url('../fonts/fujitsusans-light/FujitsuSans-Light.eot') format('embedded-opentype'),
+       url('../fonts/fujitsusans-light/FujitsuSans-Light.woff') format('woff'),
+       url('../fonts/fujitsusans-light/FujitsuSans-Light.ttf')  format('truetype'), 
+       url('../fonts/fujitsusans-light/FujitsuSans-Light.svg#FujitsuSans-Light') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fujitsu | Airstage - Assinatura de E-mail</title>
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/style-airstage.css" />
+</head>
+
+<body ng-app>
+<div class="wrap">
+  <header class="header">
+    <h1 class="page-title"> Assinatura de E-mail<br />
+      <span style="color:#416b70">Airstage</span> </h1>
+    <h2 class="page-subtitle"> Substitua sua antiga assinatura pelo novo modelo. <br />
+      <br />
+      <b>São apenas 5 passos</b>: </h2>
+    <p class="text-explain"></p>
+  </header>
+  <div class="content">
+    <ul class="list-steps">
+      <li> <span>1</span>Preencha os campos abaixo com as informações desejadas</li>
+      <li> <span>2</span>Após finalizar, clique no botão para copiar a assinatura</li>
+      <li><span>3</span>Vá até assinatura de e-mail e cole-a</li>
+      <li><span>4</span>Salve</li>
+      <li> <span>5</span>Parabéns! Agora, você tem uma nova assinatura configurada. </li>
+    </ul>
+    <ul class="list-inputs">
+      <li>
+        <label>Seu nome: </label>
+        <input type="text" ng-model="name" placeholder="Seu nome" maxlength="40"/>
+      </li>
+      <li>
+        <label>Cargo:</label>
+        <input type="text" ng-model="cargo" placeholder="Seu cargo" maxlength="80" />
+        <label style="font-size: 10px; font-weight: bold; margin-top: 10px">*Preenchimento não obrigatório.</label>
+      </li>
+      <li>
+        <label>Departamento:</label>
+        <input type="text" ng-model="depart" placeholder="Departamento" maxlength="80"/><br />
+      </li>
+      <li>
+        <label>Telefone: </label>
+        <input type="tel" ng-model="telefone" data-mask="+00 (00) 0000-0000" placeholder="Número do seu telefone" maxlength="35"/>
+      </li>
+      <li>
+        <label>Ramal: </label>
+        <input type="tel" ng-model="ramal" data-mask="00000" placeholder="Número do seu ramal" maxlength="5"/>
+      </li>
+      <li>
+        <label>Celular: </label>
+        <input type="tel" ng-model="celular" data-mask="+00 (00) 00000-0000" placeholder="Número do seu celular" maxlength="35" />
+      </li>
+      <li>
+        <label>E-mail: </label>
+        <input type="text" ng-model="email" placeholder="Seu e-mail" maxlength="50" />
+      </li>
+    </ul>
+  </div>
+  <div class="output-signature"> 
+    <!-- Inicio da tabela aqui -->
+      
+      <table cellpadding="0" cellspacing="0" border="0" id="signature" bgcolor="#ffffff" width="600" style="border-collapse:collapse;font-size:12px;font-family:Verdana,'sans-serif';color:#416b70;">
+          <tr>
+            <td width="127"><img src="https://familiaairstage.com.br/ass/img-air/logo.jpg" width="127" height="104"/></td>
+            <td width="273">
+              <font style="font-size:14px" ng-if="name"><b>{{name}}</b><br></font>
+              <font style="font-size:12px;" ng-if="cargo"><b>{{cargo}}</b><br></font>
+              <font style="font-size:12px;color:#9c9c9c" ng-if="depart">{{depart}}<br><br></font>
+                <font ng-if="telefone"><b>Tel.</b> {{telefone}}</font><font ng-if="ramal"> | <b>Ramal.</b> {{ramal}}</font><br>
+              <font ng-if="celular"><b>Cel.</b> {{celular}}<br></font>
+              {{email}}
+            </td>
+            <td width="200">
+                <img src="https://familiaairstage.com.br/ass/img-air/selo1.jpg" width="108" height="101"/><a href="https://familiaairstage.com.br/login/"><img src="https://familiaairstage.com.br/ass/img-air/selo2.jpg" width="57" height="101"/></a>           
+            </td>
+          </tr>
+          <tr><td height="18px" colspan="3"><img src="https://familiaairstage.com.br/ass/img-air/space.jpg" width="4" height="11"/></td></tr>
+          <tr>
+            <td></td>
+            <td><a href="https://www.fujitsu-general.com/br/"><img src="https://familiaairstage.com.br/ass/img-air/www.jpg" width="157" height="40"/></a></td>
+            <td width="190"><a href="https://www.youtube.com/channel/UCv8W6BwlPfub2kUwAlAKgIg"><img src="https://familiaairstage.com.br/ass/img-air/bt1.jpg" width="28" height="35"/></a><a href="https://www.instagram.com/fujitsugeneraldobrasil/"><img src="https://familiaairstage.com.br/ass/img-air/bt3.jpg" width="28" height="35"/></a><a href="https://www.facebook.com/FujitsuGeneraldoBrasil"><img src="https://familiaairstage.com.br/ass/img-air/bt4.jpg" width="28" height="35"/></a><a href="https://www.linkedin.com/company/fujitsugeneraldobrasil/?viewAsMember=true"><img src="https://familiaairstage.com.br/ass/img-air/bt2.jpg" width="28" height="35"/></a><img src="https://familiaairstage.com.br/ass/img-air/selo_reclame.jpg" width="70" height="35"/></td>
+          </tr>
+          <tr><td height="18px" colspan="3"><img src="https://familiaairstage.com.br/ass/img-air/space.jpg" width="4" height="11"/></td></tr>
+          <tr>
+            <td colspan="3"><img src="img-air/linha.jpg" width="600" height="9"/></td>
+          </tr>
+          <tr>
+            <td colspan="3" style="font-size:8px;text-align:justify">
+              <br />
+				Aviso Legal: Esta mensagem é destinada exclusivamente aos seus destinatários e poderá conter informações confidenciais e/ou privilegiadas. Se você não for o destinatário ou pessoa autorizada a receber esta mensagem, NÃO deverá usar, copiar ou divulgar as informações nela contidas ou tomar qualquer ação baseada nestas informações e está sujeito às sanções legais por violação de confidencialidade. Se você recebeu esta mensagem por engano, por favor avise ao remetente sobre o
+				ocorrido&nbsp;e,&nbsp;em&nbsp;seguida,&nbsp;exclua&nbsp;e&nbsp;elimine&nbsp;todas&nbsp;as&nbsp;cópias&nbsp;desta&nbsp;mensagem.&nbsp;Agradeço.
+				<br /><br />
+                Disclaimer: This message is intended solely for its addressees and may contain confidential and/or privileged information. If you are not the recipient or person authorized to receive this message, you should NOT use, copy or disclose the information contained therein or take any action based on this information and is subject to legal sanctions for breach of confidentiality. If you received this message by mistake, please notify the sender of what was occurred and then delete and eliminate all the copies of this message. Thank you.
+				
+            </td>
+          </tr>
+      </table>
+      
+   
+    <!-- Fim da tabela aqui --> 
+    <br />
+  </div>
+  <button type="button" id="copy">Copiar nova Assinatura!</button>
+</div>
+<div class="success">
+  <p> Uhuul! Assinatura copiada para área de<br />
+    transferência! </p>
+</div>
+
+<!-- Javascript --> 
+<script src="js/angular.min.js"></script> 
+<script src="js/jquery-3.1.1.min.js"></script> 
+<script src="js/jquery.mask.js"></script> 
+<script>
+      $(document).ready(function () {
+        $("#copy").click(function () {
+          var ass = document.getElementById("signature");
+          var range = document.createRange();
+          range.selectNodeContents(ass);
+          var selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+          document.execCommand("copy");
+          selection.removeAllRanges();
+
+          $(".success").stop().fadeIn(150).css("display", "flex");
+
+          setTimeout(function () {
+            $(".success").stop().fadeOut(250);
+          }, 800);
+
+          return false;
+        });
+
+        $("#changeColor").click(function () {
+          $(this).remove();
+          $("body").css("background", "#2c3e50");
+          $(
+            ".list-steps, .page-subtitle, .page-title, select, .list-inputs label"
+          ).css("color", "#f5f6fa");
+          $(".list-inputs input, .list-inputs select").css("border", "none");
+          $("#copy").css("background", "#e31319");
+        });
+      });
+    </script>
+</body>
+</html>

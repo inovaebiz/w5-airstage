@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Fujitsu - | Assinatura de E-mail</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style-fujitsu.css" />
+  </head>
+
+  <body ng-app>
+    <div class="wrap">
+      <header class="header">
+        <h1 class="page-title">
+          Assinatura de E-mail<br />
+          <span style="color: #e31319">Fujitsu </span>
+        </h1>
+        <h2 class="page-subtitle">
+          Substitua sua antiga assinatura pelo novo modelo. <br /><br />
+          <b>São apenas 5 passos</b>:
+        </h2>
+        <p class="text-explain"></p>
+      </header>
+      <div class="content">
+        <ul class="list-steps">
+          <li>
+            <span>1</span>Preencha os campos abaixo com as informações desejadas
+          </li>
+          <li>
+            <span>2</span>Após finalizar, clique no botão para copiar a
+            assinatura
+          </li>
+          <li><span>3</span>Vá até seu <i>client</i> de e-mail e cole-a</li>
+          <li><span>4</span>Salve</li>
+          <li>
+            <span>5</span>Parabéns! Agora, você tem uma nova assinatura
+            configurada.
+          </li>
+        </ul>
+
+        <ul class="list-inputs">
+          <li>
+            <label>Seu nome: </label>
+            <input
+              type="text"
+              ng-model="name"
+              placeholder="Seu nome"
+              maxlength="40"
+            />
+          </li>
+
+          <li>
+            <label>Departamento: </label>
+            <input
+              type="text"
+              ng-model="depart"
+              placeholder="Departamento"
+              maxlength="80"
+            />
+          </li>
+
+          <li>
+            <label>Telefone: </label>
+            <input
+              type="tel"
+              ng-model="telefone"
+              data-mask="+00 (00) 0000-0000"
+              placeholder="Número do seu telefone"
+              maxlength="35"
+            />
+          </li>
+
+          <li>
+            <label>Celular: </label>
+            <input
+              type="tel"
+              ng-model="celular"
+              data-mask="+00 (00) 00000-0000"
+              placeholder="Número do seu celular"
+              maxlength="35"
+            />
+          </li>
+
+          <li>
+            <label>E-mail: </label>
+            <input
+              type="text"
+              ng-model="email"
+              placeholder="Seu e-mail"
+              maxlength="35"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div class="output-signature">
+        <!-- Inicio da tabela aqui -->
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          id="signature"
+          bgcolor="#ffffff"
+        >
+          <tr>
+            <td valign="bottom">
+              <table
+                valign="bottom"
+                style="
+                  border-collapse: collapse;
+                  font-family: 'Calibri';
+                  color: #888888;
+                "
+              >
+                <tr>
+                  <td width="282" height="37" valign="top">
+                    <img
+                      width="282"
+                      height="37"
+                      src="https://familia.fujitsu-general.com/ass/img/1.png"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td height="30" valign="top"></td>
+                </tr>
+
+                <tr>
+                  <td valign="top">
+                    <font
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #1d1d1b;
+                        font-size: 14px;
+                      "
+                      ><b>{{name}}</b></font
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td height="2" valign="top"></td>
+                </tr>
+
+                <tr>
+                  <td valign="top">
+                    <font
+                      ng-if="depart"
+                      style="
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #1d1d1b;
+                      "
+                      >{{depart}}</font
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td height="5" valign="top"></td>
+                </tr>
+
+                <tr>
+                  <td valign="top">
+                    <a
+                      target="_blank"
+                      href="https://www.fujitsu-general.com/br"
+                      style="
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 12px;
+                        color: #1d1d1b;
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                      "
+                    >
+                      <b>Fujitsu General do Brasil</b></a
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td valign="top">
+                    <font
+                      ng-if="telefone"
+                      style="
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #1d1d1b;
+                      "
+                      >Tel.: {{telefone}}</font
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td valign="top">
+                    <font
+                      ng-if="celular"
+                      style="
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #1d1d1b;
+                      "
+                      >Cel.: {{celular}}</font
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td valign="top">
+                    <font
+                      ng-if="email"
+                      style="
+                        font-size: 12px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #1d1d1b;
+                      "
+                      >E-mail.: {{email}}</font
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td height="5" valign="top"></td>
+                </tr>
+
+                <tr>
+                  <td valign="top">
+                    <a
+                      target="_blank"
+                      href="https://www.fujitsu-general.com/br"
+                      style="
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 12px;
+                        color: #e31319;
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                      "
+                    >
+                      <b>www.fujitsu-general.com/br</b></a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <td valign="bottom">
+              <table
+                valign="bottom"
+                style="
+                  border-collapse: collapse;
+                  font-family: 'Calibri';
+                  color: #888888;
+                "
+              >
+                <tr>
+                  <td height="198" valign="top">
+                    <img
+                      width="6"
+                      height="198"
+                      src="https://familia.fujitsu-general.com/ass/img/2.png"
+                      alt=""
+                    />
+                  </td>
+
+                  <td width="70"></td>
+                </tr>
+              </table>
+            </td>
+
+            <td valign="bottom">
+              <table
+                valign="bottom"
+                style="
+                  border-collapse: collapse;
+                  font-family: 'Calibri';
+                  color: #888888;
+                "
+              >
+                <tr>
+                  <td width="258" height="158" valign="top">
+                    <img
+                      width="258"
+                      height="158"
+                      src="https://familia.fujitsu-general.com/ass/img/3.png"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="bottom" height="25">
+                    <a
+                      target="_blank"
+                      href="https://www.youtube.com/fujitsu"
+                      style="height: 38px; display: inline-block"
+                    >
+                      <img
+                        src="https://familia.fujitsu-general.com/ass/img/4.png"
+                        width="38"
+                        height="38"
+                    /></a>
+
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/fujitsu_br/"
+                      style="height: 38px; display: inline-block"
+                    >
+                      <img
+                        src="https://familia.fujitsu-general.com/ass/img/5.png"
+                        width="34"
+                        height="38"
+                        alt="www.petsociety.com.br"
+                    /></a>
+
+                    <a
+                      target="_blank"
+                      href="https://facebook.com/profile.php?id=298588727236291"
+                      style="height: 38px; display: inline-block"
+                    >
+                      <img
+                        src="https://familia.fujitsu-general.com/ass/img/6.png"
+                        width="34"
+                        height="38"
+                    /></a>
+
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/company/fujitsu/?originalSubdomain=br"
+                      style="height: 38px; display: inline-block"
+                    >
+                      <img
+                        src="https://familia.fujitsu-general.com/ass/img/7.png"
+                        width="34"
+                        height="38"
+                    /></a>
+
+                    <img
+                      src="https://familia.fujitsu-general.com/ass/img/8.png"
+                      width="99"
+                      height="38"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="3" style="text-align: justify">
+              <br />
+              <br />
+              <font
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 8px;
+                "
+                >Aviso Legal: Esta mensagem é destinada exclusivamente aos seus
+                destinatários e poderá conter informações confidenciais e/ou
+                privilegiadas. Se você não for o destinatário ou pessoa
+                autorizada a receber esta mensagem, NÃO deverá usar, copiar ou
+                divulgar as informações nela contidas ou tomar qualquer ação
+                baseada nestas informações e está sujeito às sanções legais por
+                violação de confidencialidade. Se você recebeu esta mensagem por
+                engano, por favor avise ao remetente sobre o ocorrido e, em
+                seguida, exclua e elimine todas as cópias desta mensagem.
+                Agradeço. <br /><br />
+                Disclaimer: This message is intended solely for its addressees
+                and may contain confidential and/or privileged information. If
+                you are not the recipient or person authorized to receive this
+                message, you should NOT use, copy or disclose the information
+                contained therein or take any action based on this information
+                and is subject to legal sanctions for breach of confidentiality.
+                If you received this message by mistake, please notify the
+                sender of what was occurred and then delete and eliminate all
+                the copies of this message. Thank you.</font
+              >
+            </td>
+          </tr>
+        </table>
+        <!-- Fim da tabela aqui -->
+        <br />
+      </div>
+
+      <button type="button" id="copy">Copiar nova Assinatura!</button>
+    </div>
+
+    <div class="success">
+      <p>
+        Uhuul! Assinatura copiada para área de<br />
+        transferência!
+      </p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#copy").click(function () {
+          var ass = document.getElementById("signature");
+          var range = document.createRange();
+          range.selectNodeContents(ass);
+          var selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+          document.execCommand("copy");
+          selection.removeAllRanges();
+
+          $(".success").stop().fadeIn(150).css("display", "flex");
+
+          setTimeout(function () {
+            $(".success").stop().fadeOut(250);
+          }, 800);
+
+          return false;
+        });
+
+        $("#changeColor").click(function () {
+          $(this).remove();
+          $("body").css("background", "#2c3e50");
+          $(
+            ".list-steps, .page-subtitle, .page-title, select, .list-inputs label"
+          ).css("color", "#f5f6fa");
+          $(".list-inputs input, .list-inputs select").css("border", "none");
+          $("#copy").css("background", "#e31319");
+        });
+      });
+    </script>
+  </body>
+</html>
