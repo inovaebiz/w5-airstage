@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/application/libraries/phpoffice/phpspreadsheet/src" isTestSource="false" packagePrefix="PhpOffice" />
+      <sourceFolder url="file://$MODULE_DIR$/application/libraries/postmark-lib" isTestSource="false" packagePrefix="Postmark" />
+      <sourceFolder url="file://$MODULE_DIR$/application/libraries/postmark-lib/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/homolog/application/libraries/phpoffice/phpspreadsheet/src" isTestSource="false" packagePrefix="PhpOffice" />
+      <sourceFolder url="file://$MODULE_DIR$/homolog/application/libraries/postmark-lib" isTestSource="false" packagePrefix="Postmark" />
+      <sourceFolder url="file://$MODULE_DIR$/homolog/application/libraries/postmark-lib/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,6 +1,6 @@
 <?php
 
-$mode = "production";
+$mode = "development";
 
 /**
  * CodeIgniter

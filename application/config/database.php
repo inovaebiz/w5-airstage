@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
-$active_group = 'production';
+$active_group = 'development';
 $query_builder = TRUE;
 
 $db['development'] = array(
@@ -78,7 +78,7 @@ $db['development'] = array(
 	'hostname' => 'localhost:3306',
 	'username' => 'root',
 	'password' => '',
-	'database' => 'familiafujitsu_',
+	'database' => 'familiafujitsu_homolog',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

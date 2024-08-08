@@ -24,6 +24,7 @@
 
 <!-- MAIN -->
 <main role="main" class="col-md-12 col-lg-9 col-xl-8 offset-xl-1">
+
 <h1>Pontuação</h1>
 
 <section>

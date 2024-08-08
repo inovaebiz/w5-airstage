@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | development = localhost
 | production = https://familiaairstage.com.br/
 */
-$mode = "production";
+$mode = "development";
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -33,7 +33,8 @@ $mode = "production";
 
 if($mode != "production") :
 	// $config['base_url'] = 'http://localhost/';
-	$config['base_url'] = 'http://localhost/w5/clientes/familiaairstage.com.br/';
+	//$config['base_url'] = 'http://localhost/w5/clientes/familiaairstage.com.br/';
+	$config['base_url'] = 'http://localhost/w5airstage/';
 else:
 	$config['base_url'] = 'https://familiaairstage.com.br/';
 endif;
